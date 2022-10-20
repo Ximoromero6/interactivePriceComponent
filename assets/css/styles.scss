@@ -206,9 +206,7 @@ main {
                     height: 26px;
                     margin: 0 10px;
                     input {
-                        opacity: 0;
-                        width: 0;
-                        height: 0;
+                        display: none;
                         &:checked+.sliderCheckbox {
                             background-color: $Soft_Cyan;
                             &::before {
@@ -310,19 +308,19 @@ main {
                         flex-direction: column;
                         margin-bottom: 0;
                         #myRange {
-                            margin: 40px auto;
+                            margin: 40px 0;
                         }
                     }
                 }
                 .containerSwitch {
-                    margin: 20px auto;
+                    margin: 20px 0;
                     p {
                         font-size: 12px;
                         .discount {
                             display: none;
                         }
                         .discountMobile {
-                            display: block;
+                            display: flex;
                         }
                     }
                 }

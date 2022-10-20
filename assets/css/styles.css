@@ -232,9 +232,7 @@ main .container .topContainer .containerSwitch .switch {
 }
 
 main .container .topContainer .containerSwitch .switch input {
-  opacity: 0;
-  width: 0;
-  height: 0;
+  display: none;
 }
 
 main .container .topContainer .containerSwitch .switch input:checked + .sliderCheckbox {
@@ -364,10 +362,10 @@ main .container .bottomContainer .startTrial:hover {
     margin-bottom: 0;
   }
   main .container .topContainer .containerPageview .containerPageviewText #myRange {
-    margin: 40px auto;
+    margin: 40px 0;
   }
   main .container .topContainer .containerSwitch {
-    margin: 20px auto;
+    margin: 20px 0;
   }
   main .container .topContainer .containerSwitch p {
     font-size: 12px;
@@ -376,7 +374,9 @@ main .container .bottomContainer .startTrial:hover {
     display: none;
   }
   main .container .topContainer .containerSwitch p .discountMobile {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   main .container .bottomContainer {
     -webkit-box-orient: vertical;
