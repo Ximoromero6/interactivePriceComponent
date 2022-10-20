@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="shortcut icon" href="assets/images/favicon-32x32.png" type="image/x-icon">
+    <meta name="title" content="Interactive pricing component | Ximo Romero">
+    <meta name="description" content="Your challenge is to build out this interactive pricing component and get it looking as close to the design as possible.">
+    <meta name="keywords" content="css challange, web development, js">
+    <meta name="robots" content="index, follow">
+    <title>Interactive Pricing Component | Ximo Romero</title>
+</head>
+
+<body>
+    <main>
+        <section class="text">
+            <h1 class="title">Simple, traffic-based pricing</h1>
+            <p class="subtitle">Sign-up for our 30 day trial. No credit card required.</p>
+        </section>
+        <div class="container">
+            <div class="topContainer">
+                <div class="containerPageview">
+                    <div class="containerPageviewText">
+                        <p class="pageViews"><span>100K</span> PAGEVIEWS</p>
+                        <p class="price"><span class="dynamicPrice">$16.00</span>/ month</p>
+                    </div>
+                    <input type="range" min="0" max="100" value="50" class="slider" id="myRange" step="25" aria-label="Slider">
+                </div>
+                <div class="containerSwitch">
+                    <p>Monthly Billing</p>
+                    <label class="switch">
+                        <input type="checkbox" id="checkBoxPricing" aria-label="Plan selector">
+                        <span class="sliderCheckbox round"></span>
+                      </label>
+                    <p>Yearly Billing <span class="discount">25% discount</span><span class="discountMobile">-25%</span></p>
+                </div>
+            </div>
+            <div class="separator"></div>
+            <div class="bottomContainer">
+                <ul>
+                    <li>
+                        <img src="assets/images/icon-check.svg" alt="">
+                        <p>Unlimited websites</p>
+                    </li>
+                    <li>
+                        <img src="assets/images/icon-check.svg" alt="">
+                        <p>100% data ownership</p>
+                    </li>
+                    <li>
+                        <img src="assets/images/icon-check.svg" alt="">
+                        <p>Email reports</p>
+                    </li>
+                </ul>
+                <a href="#!" class="startTrial">Start my trial</a>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/app.js"></script>
+</body>
+
+</html>
